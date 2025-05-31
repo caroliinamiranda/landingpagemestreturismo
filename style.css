@@ -1,0 +1,726 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor-primaria: #014BAE;
+    --cor-secundaria: #0097B2;
+    --cor-terciaria: #ffffff;
+    --cor-de-apoio: #ffbd3a;
+    --font-principal:"Open Sans", sans-serif;
+}
+
+* {
+    margin:0%;
+    padding:0%;
+}
+
+.body{
+    /* height: 100vh; */
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/sunrise_mestreturismo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.menu__links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-primaria);
+    border-radius: 3px;
+    gap: 3%;
+    opacity: 77%;
+    padding: 1.5%;
+    margin: 0% 10% 0% 10%;
+}
+
+.menu__links a{
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    font-family: var(--font-principal);
+    font-weight: 700;
+    font-size: 0.8rem;
+    transition: 0.5s;
+}
+
+.menu__links a:hover{
+    color: var(--cor-de-apoio);
+}
+
+.menu__links img{
+    width: 80%;
+}
+
+.menu__mobile{
+    display: none;
+}
+
+.mini_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 5%;
+    padding: 5% 0% 3% 0%;
+    margin: 0% 10% 0% 10%;
+}
+
+.title{
+    width: 70%;
+    margin-top: -30px;
+}
+
+.title h1{
+    font-family: var(--font-principal);
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 60px;
+    color: var(--cor-terciaria);
+}
+
+.title p{
+    font-family: var(--font-principal);
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--cor-terciaria);
+}
+
+.back_blue{
+    background-color: var(--cor-primaria);
+    border-radius: 2px;
+    padding: 0.2%;
+    opacity: 77%;
+    width: 45%;
+}
+
+.yellow{
+    color: var(--cor-de-apoio);
+}
+
+.contact_list{
+    width: 30%;
+    background-color: rgb(30, 30, 30);
+    opacity: 83%;
+    border-radius: 3px;
+    padding: 5% 4%;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.contact_list__menu, .contact_list__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 3%;
+    padding-top: 7%;
+}
+
+.contact_list__menu a{
+    width: 90%;
+    color: var(--cor-terciaria);
+    font-weight: 700;
+    background-color: var(--cor-primaria);
+    text-decoration: none;
+    margin: 2%;
+    padding: 3%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact_list__menu a:hover{
+    background-color: transparent;
+    border: var(--cor-de-apoio) solid 2px;
+    color: var(--cor-terciaria);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.icon{
+    width: 7%;
+    padding-right: 1%;
+}
+
+.contact_list p{
+    color: var(--cor-terciaria);
+    font-family: var(--font-principal);
+    font-size: 1rem;
+    padding-bottom: 2%;
+}
+
+.contact_list a{
+    color: var(--cor-terciaria);
+    font-family: var(--font-principal);
+    font-size: 1rem;
+}
+
+.capacitacao{
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/fundo_mestre_turismo_.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.capacitacao_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3% 0% 7% 0%;
+} 
+
+.capacitacao_container img{
+    width: 60%;
+    padding: 5% 0%;
+    margin: 0% 0% 0% 10%;
+    border-radius: 5px;
+}
+
+.capacitacao_container__text{
+    width: 50%;
+    padding: 5% 0%;
+    margin: 0% 10% 0% 0%;
+}
+
+.capacitacao_container__text h2{
+    font-family: var(--font-principal);
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--cor-terciaria);
+    padding-bottom: 2%;
+}
+
+.capacitacao_container__text__yellow{
+    font-family: var(--font-principal);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--cor-de-apoio);
+    padding-bottom: 1%;
+}
+
+.capacitacao_container__text__white{
+    font-family: var(--font-principal);
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--cor-terciaria);
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.contact_buttom{
+    border: var(--cor-terciaria) solid 1px;
+    border-radius: 5px;
+    padding: 2% 5%;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    font-family: var(--font-principal);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.contact_buttom:hover{
+    border: var(--cor-de-apoio) solid 1px;
+    color: var(--cor-de-apoio);
+    transition: 0.5s;
+}
+
+.themes{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('/assets/fundo_mestre_turismo1_.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 5%;
+}
+
+.themes_board{
+    background-color: var(--cor-primaria);
+    text-align: center;
+    padding: 2% 5% 2% 5%;
+    margin-top: -7%;
+}
+
+.themes_board p{
+    color: var(--cor-de-apoio);
+    font-family: var(--font-principal);
+    font-size: 2.5rem;
+}
+
+.themes_board__line{
+    color: var(--cor-terciaria);
+    font-family: var(--font-principal);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.themes_board_list{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.themes_list{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 1%;
+    padding: 5% 0%;
+    list-style-type: none;
+}
+
+.themes_list p{
+    color: var(--cor-terciaria);
+    font-family: var(--font-principal);
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding-top: 1%;
+}
+
+.themes_list img{
+    width: 90%;
+    border-radius: 3px;
+}
+
+.themes_buttom{
+    border: 1px solid;
+    border-color: var(--cor-terciaria);
+    border-radius: 10px;
+    color: var(--cor-terciaria);
+    font-family: var(--font-principal);
+    font-size: 1rem;
+    text-decoration: none;
+    width: 30%;
+    padding: 2% 2%;
+}    
+
+.themes_buttom:hover{
+    color: var(--cor-de-apoio);
+    border-color: var(--cor-de-apoio);
+    transition: 0.5s;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    background-color:rgb(41, 41, 41);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 5%;
+    color: var(--cor-terciaria);
+    font-family: var(--font-principal);
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 5% 0%;
+}
+
+.marca_bottom{
+    width: 7%;
+    padding-bottom: 0.5%;
+}
+
+.footer_icon{
+    width: 2.5%;
+    padding: 0.5% 0%;
+}
+
+/*MOBILE*/
+
+@media screen and (max-width: 450px){
+    
+    .menu__mobile{
+        width: 100%;
+        position: absolute; 
+        padding: 5% 0% 1% 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10%;
+        z-index: 999;
+    }
+    .menu__mobile__hamb{
+        width: 50px;
+        height: 38px;
+        background-image: url('/assets/menu_hamburguer.png');
+        background-repeat: no-repeat;
+        display: inline-block;
+        position: relative;
+    }
+    .menu__mobile__hamb:hover{
+        background-image: url('/assets/menu_hamburguer_hover.png');
+    }
+    .menu__list{
+        display: none;
+        position: absolute;
+        list-style-type: none;
+        top: 100%;
+        background-color: var(--cor-terciaria);
+        width: 50%;
+        border-radius: 7px;
+    }
+    .menu__mobile__button:checked ~ .menu__list{
+        display: block;
+    }
+    .menu__mobile__link{
+        text-decoration: none;
+        color: var(--cor-primaria);
+        font-family: var(--font-principal);
+    }
+    .menu__mobile__link:hover{
+        color: var(--cor-de-apoio);
+    }
+    .menu__mobile__item{
+        font-size: 20px;
+        font-weight: 600;
+        padding: 7%;
+    }
+    .menu__mobile__item:hover{
+        background-color: rgb(30, 30, 30);
+        opacity: 83%;
+        border-radius: 7px;
+    }
+    .menu__mobile__button{
+        display: none;
+    }
+    .menu__links{
+        display: none;
+    }
+    .container{
+        background-size: cover;
+        background-position: left;
+    }
+    .mini_container{
+        padding: 5% 0% 3% 0%;
+        margin: 0% 2% 0% 2%;
+    }
+    .title{
+        width: 85%;
+        margin-top: 0px;
+        padding: 7% 0%;
+    }
+    .title h1{
+        font-size: 2.3rem;
+        line-height: 40px;
+        padding: 20% 0% 10% 0%;
+    }
+    .contact_list{
+        width: 80%;
+        padding: 5% 4%;
+        margin-bottom: 7%;
+    }
+    .mini_container{
+        flex-direction: column;
+    }
+    .capacitacao_container img{
+        width: 80%;
+        padding: 15% 0% 5% 0%;
+        margin: 0%;
+        border-radius: 5px;
+    }
+    .capacitacao_container__text{
+        width: 80%;
+        padding: 5% 0% 15% 0%;
+        margin: 0%;
+    }
+    .capacitacao_container{
+        flex-direction: column;
+    }
+    .themes_board{
+        width: 75%;
+    }
+    .themes_board__line{
+        padding: 0% 5%;
+        font-size: 1.1rem;
+    }
+    .themes_board p{
+        font-size: 2.2rem;
+        line-height: 45px;
+    }
+    .themes_list{
+        flex-direction: column;
+    }
+    .themes_board_list li{
+        padding: 5% 0%;
+    }
+    .themes_buttom{
+        width: 80%;
+        padding: 2% 2%;
+        margin: 5% 0%;
+    }
+    .footer{
+        padding: 10%;
+    }
+    .marca_bottom{
+        width: 30%;
+        padding-bottom: 0.5%;
+    }
+    .footer_icon{
+        width: 6%;
+        padding: 1% 0%;
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 1024px){
+    
+    .menu__mobile{
+        width: 100%;
+        position: absolute; 
+        padding: 5% 0% 1% 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10%;
+        z-index: 999;
+    }
+    .menu__mobile__hamb{
+        width: 50px;
+        height: 38px;
+        background-image: url('/assets/menu_hamburguer.png');
+        background-repeat: no-repeat;
+        display: inline-block;
+        position: relative;
+    }
+    .menu__mobile__hamb:hover{
+        background-image: url('/assets/menu_hamburguer_hover.png');
+    }
+    .menu__list{
+        display: none;
+        position: absolute;
+        list-style-type: none;
+        top: 100%;
+        background-color: var(--cor-terciaria);
+        width: 50%;
+        border-radius: 7px;
+    }
+    .menu__mobile__button:checked ~ .menu__list{
+        display: block;
+    }
+    .menu__mobile__link{
+        text-decoration: none;
+        color: var(--cor-primaria);
+        font-family: var(--font-principal);
+    }
+    .menu__mobile__link:hover{
+        color: var(--cor-de-apoio);
+    }
+    .menu__mobile__item{
+        font-size: 20px;
+        font-weight: 600;
+        padding: 7%;
+    }
+    .menu__mobile__item:hover{
+        background-color: rgb(30, 30, 30);
+        opacity: 83%;
+        border-radius: 7px;
+    }
+    .menu__mobile__button{
+        display: none;
+    }
+    .menu__links{
+        display: none;
+    }
+    .container{
+        background-size: cover;
+        background-position: left;
+    }
+    .mini_container{
+        padding: 5% 0% 3% 0%;
+        margin: 0% 2% 0% 2%;
+    }
+    .title{
+        width: 85%;
+        margin-top: 0px;
+        padding: 7% 0%;
+    }
+    .title h1{
+        font-size: 4.2rem;
+        line-height: 75px;
+        padding: 7% 0% 5% 0%;
+    }
+    .title p{
+        font-size: 1.7rem;
+    }
+    .contact_list{
+        width: 80%;
+        padding: 5% 4%;
+        margin-bottom: 7%;
+    }
+    .contact_list p{
+        font-size: 1.7rem;
+    }
+    .contact_list a{
+        font-size: 1.7rem;
+    }
+    .contact_list__menu a:hover{
+        border: var(--cor-de-apoio) solid 5px;
+    }
+    .mini_container{
+        flex-direction: column;
+    }
+    .capacitacao_container{
+        flex-direction: column;
+        padding: 3% 0% 3% 0%;
+    }
+    .capacitacao_container img{
+        width: 80%;
+        padding: 15% 0% 5% 0%;
+        margin: 0%;
+        border-radius: 5px;
+    }
+    .capacitacao_container__text{
+        width: 80%;
+        padding: 5% 0% 15% 0%;
+        margin: 0%;
+    }
+    .capacitacao_container__text h2{
+        font-size: 3rem;
+    }
+    .capacitacao_container__text__white{
+        font-size: 1.7rem;
+    }
+    .capacitacao_container__text__yellow{
+        font-size: 1.7rem;
+    }
+    .contact_buttom{
+        font-size: 1.7rem;
+    }
+    .themes{
+        padding-bottom: 10%;
+    }
+    .themes_board__line{
+    font-size: 1.3rem;
+    }
+    .themes_buttom{
+        width: 60%;
+        font-size: 1.7rem;
+    }
+    .footer{
+        font-size: 1.2rem;
+        padding: 7% 0%;
+    }
+    .marca_bottom{
+        width: 15%;
+        padding-bottom: 0.7%;
+    }
+    .footer_icon{
+        width: 4%;
+        padding: 0.7% 0%;
+    }
+}
+
+/*MOBILE END*/
+/*4k*/
+
+@media screen and (min-width: 2600px){
+    .menu__links{
+        padding-right: 2%;
+    }
+    .menu__links img{
+        width: 150%;
+    }
+    .menu__links a{
+        font-size: 2.2rem;
+        padding-left: 2%;
+    }
+    .mini_container{
+        margin: 0% 10% 0% 10%;
+    }
+    .title h1{
+        font-size: 8rem;
+        line-height: 140px;
+        padding-bottom: 1%;
+    }
+    .title p{
+        font-size: 3rem;
+    }
+    .contact_list{
+        width: 60%;
+        padding: 5% 4%;
+        margin-bottom: 7%;
+    }
+    .contact_list p{
+        font-size: 3rem;
+    }
+    .contact_list a{
+        font-size: 2.7rem;
+    }
+    .capacitacao_container{
+        padding: 5% 3% 10% 7%;
+        gap: 6%;
+    }
+    .capacitacao_container img{
+        width: 120%;
+        margin: 0%;
+    }
+    .capacitacao_container__text{
+        margin: 0%;
+    }
+    .capacitacao_container__text h2{
+        font-size: 5rem;
+    }
+    .capacitacao_container__text__yellow{
+        font-size: 2.7rem;
+    }
+    .capacitacao_container__text__white{
+        font-size: 2.7rem;
+    }
+    .contact_buttom{
+        font-size: 2.7rem;
+        border: var(--cor-terciaria) solid 3px;
+        border-radius: 10px;
+    }
+    .contact_buttom:hover{
+        border: var(--cor-de-apoio) solid 3px;
+        border-radius: 10px;
+    }
+    .themes_board p{
+        font-size: 5rem;
+    }
+    .themes_board__line{
+        font-size: 3rem;
+    }
+    .themes_list p{
+        font-size: 3rem;
+        padding-top: 3%;
+    }
+    .themes_buttom{
+        border: 3px solid;
+        font-size: 2.7rem;
+    }    
+    .themes_buttom:hover{
+        border: var(--cor-de-apoio) 3px solid;
+    }
+    .footer{
+        font-size: 3rem;
+        padding: 5% 0%;
+    }
+    .marca_bottom{
+        width: 10%;
+        padding-bottom: 0.7%;
+    }
+    .footer_icon{
+        width: 3%;
+        padding: 0.7% 0%;
+    }
+}
+
+/*4k END*/
